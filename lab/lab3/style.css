@@ -1,0 +1,136 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+/* Pham Van Dat - 20520155 */
+@font-face {
+  font-family: "serif";
+  src: url(font/Lovato_Light.otf);
+}
+@font-face {
+  font-family: "slab_serif";
+  src: url(font/JosefinSlab-Bold.ttf);
+}
+body {
+  font-family: "serif";
+  font-size: 10px;
+  line-height: 1.5;
+  word-spacing: 0.5px;
+  letter-spacing: 0.5px;
+}
+h2 {
+  font-family: "slab_serif";
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+header {
+  font-family: "slab_serif";
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h2 + p {
+  text-indent: 15px;
+}
+a:link {
+  color: rgb(213, 189, 175);
+}
+
+a:visited {
+  color: rgb(96, 108, 56);
+}
+
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+a:focus {
+  color: rgb(0, 0, 0, 0.5);
+  outline: none;
+}
+a:active {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
+section p a::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-image: url(font/external-link-52.png);
+  background-size: 100% 100%;
+  right: -3px;
+  top: 0px;
+}
+section ul li {
+  margin-bottom: 2px;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+nav ul li {
+  display: block;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 10px;
+  font-size: 1.5em;
+  right: 100px;
+  padding: 20px 0 20px 0;
+  list-style-type: none;
+}
+nav ul li:hover {
+  background-color: rgb(170, 102, 102);
+}
+nav ul li a {
+  text-decoration: none;
+}
